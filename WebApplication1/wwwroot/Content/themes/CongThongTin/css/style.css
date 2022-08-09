@@ -1,0 +1,309 @@
+﻿/*Theme the Tabulator element*/
+.GridData {
+    background-color: #f2f2f2;
+    border: 1px solid #dbdbe1;
+    font-size: 12px !important;
+    font-family: arial,sans-serif,Verdana;
+}
+
+    /*Theme the header*/
+    .GridData .tabulator-header {
+        background-color: #f3f4f5;
+        color: #fff;
+    }
+
+        /*Allow column header names to wrap lines*/
+        .GridData .tabulator-header .tabulator-col,
+        .GridData .tabulator-header .tabulator-col-row-handle {
+            white-space: normal;
+            background-color: #F3F4F5;
+            color: #000000;
+        }
+
+    /*Color the table rows*/
+    .GridData .tabulator-tableHolder .tabulator-table .tabulator-row {
+        color: #000000;
+        background-color: #fff;
+    }
+
+        /*Color even rows*/
+        .GridData .tabulator-tableHolder .tabulator-table .tabulator-row:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+.tabulator-row.tabulator-selected {
+    background-color: #9abcea !important;
+}
+
+.tabulator-footer {
+    background-color: #f3f4f5 !important;
+    border-top: 1px solid #dbdbe1 !important;
+}
+
+.tabulator-group {
+    background-color: #D7D7D7 !important;
+    padding: 0px 8px !important;
+}
+
+.tabulator-row .tabulator-cell {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 4px;
+    border-right: 1px solid #dbdbe1;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabulator-row.tabulator-group {
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    padding: 5px;
+    padding-left: 10px;
+    background: #ccc;
+    font-weight: 700;
+    min-width: 100%;
+}
+
+    .tabulator-row.tabulator-group span {
+        margin-left: 10px;
+        color: #000;
+    }
+
+.tabulator .tabulator-footer .tabulator-page {
+    display: inline-block;
+    margin: 0 0px;
+    padding: 2px 5px;
+    border-radius: 0px;
+    background: hsla(0,0%,100%,.2);
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+    .tabulator .tabulator-footer .tabulator-page.active {
+        color: #fff;
+        background-color: #0092DD;
+        border: none;
+    }
+
+.tabulator .tabulator-footer .tabulator-page-size {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 2px 5px;
+    border: 1px solid #aaa;
+    border-radius: 0;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+    line-height: 15px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    border: 1px;
+}
+
+th, td {
+    vertical-align: middle !important;
+}
+
+.dataTables_length select {
+    display: contents;
+}
+
+@media (max-width: 991px) {
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .page-content {
+        padding-top: 4px !important;
+    }
+
+    .bootbox .modal-dialog {
+        width: 40%;
+    }
+}
+
+@media (max-width: 639px) {
+    .dataTables_wrapper .col-xs-6 {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .dataTables_filter, .dataTables_paginate {
+        text-align: center !important;
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-dialog {
+        width: 55%;
+    }
+
+    .bootbox .modal-dialog {
+        width: 40%;
+    }
+}
+
+.modal-body {
+    padding: 12px 13px 14px 14px;
+}
+
+.main-content {
+    margin-top: 14px;
+}
+
+.tieu-de-trang {
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+.modal-footer {
+    padding: 10px 12px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.nenmaunau {
+    background-color: #9585BF;
+    padding: .2em .4em .3em;
+    font-size: 12px;
+    line-height: 1;
+    height: 18px;
+    color: #FFF;
+    display: inline-block;
+}
+
+.searchCss {
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    height: 28px !important;
+    width: 250px;
+}
+
+    .searchCss:focus {
+        border-top: 1px solid #009DCC;
+        border-left: 1px solid #009DCC;
+        border-right: 1px solid #009DCC;
+        border-bottom: 1px solid #009DCC;
+    }
+
+    .searchCss:hover {
+        border-top: 1px solid #009DCC;
+        border-left: 1px solid #009DCC;
+        border-right: 1px solid #009DCC;
+        border-bottom: 1px solid #009DCC;
+    }
+
+.ob_iTL {
+    height: 27px !important;
+}
+
+.ob_iCboIC {
+    margin-top: -2px !important;
+}
+
+table.calendarMonthDefault {
+    margin-left: -3px;
+}
+
+.calendarCalendarDefault {
+    height: 200px;
+}
+
+table.dogmaBottomLineTable {
+    display: none;
+}
+
+.dogmaBottomLineContainer {
+    border-top: 1px solid grey;
+}
+
+.select2-container--default .select2-selection {
+    border-color: #ddd;
+    border-radius: 3px;
+}
+
+.select2-link {
+    border-radius: 0px !important;
+    width: 100%;
+    background-color: #2E8965 !important;
+    text-align: left;
+    line-height: 18px;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+.tabulator-selected {
+    background: #38b8e6 !important;
+}
+
+
+
+
+.nenmaunau {
+    background-color: #9585BF;
+    padding: .2em .4em .3em;
+    font-size: 12px;
+    line-height: 1;
+    height: 18px;
+    color: #FFF;
+    display: inline-block;
+}
+
+.searchCss {
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    height: 28px !important;
+    width: 250px;
+}
+
+    .searchCss:focus {
+        border-top: 1px solid #009DCC;
+        border-left: 1px solid #009DCC;
+        border-right: 1px solid #009DCC;
+        border-bottom: 1px solid #009DCC;
+    }
+
+    .searchCss:hover {
+        border-top: 1px solid #009DCC;
+        border-left: 1px solid #009DCC;
+        border-right: 1px solid #009DCC;
+        border-bottom: 1px solid #009DCC;
+    }
+
+.ob_iTL {
+    height: 27px !important;
+}
+
+.ob_iCboIC {
+    margin-top: -2px !important;
+}
+
+table.calendarMonthDefault {
+    margin-left: -3px;
+}
+
+.calendarCalendarDefault {
+    height: 200px;
+}
+
+table.dogmaBottomLineTable {
+    display: none;
+}
+
+.dogmaBottomLineContainer {
+    border-top: 1px solid grey;
+}

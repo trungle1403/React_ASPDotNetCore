@@ -1,0 +1,95 @@
+﻿.content-slide-bottom {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.title_slide {
+    font-size: 14px;
+    text-decoration: none;
+    border-left: 4px solid #00406B;
+    height: 43px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.tieu-de-trang-chu {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 8px !important;
+    padding-left: 10px;
+    position: absolute;
+}
+
+    .tieu-de-trang-chu:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+.title_module_main {
+    height: 44px;
+}
+
+.left-tieu-de-trang-chu {
+    border-bottom: 2px solid #BD1701;
+    height: 42px;
+}
+
+.slideshow-containerslide {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+/* Ẩn các slider */
+.mySlidesslide {
+    display: none;
+}
+
+.dotslide {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+    /* khi được hover, active đổi màu nền */
+    .activeslide, .dotslide:hover {
+        background-color: #005B99;
+    }
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fadeslide {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fadeslide {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeslide {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#slideface img {
+    width: 400px !important;
+    height: 250px !important;
+}

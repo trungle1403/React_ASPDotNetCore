@@ -1,0 +1,913 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebApplication1/1.0.0": {
+        "dependencies": {
+          "ClosedXML": "0.96.0",
+          "DocumentFormat.OpenXml": "2.17.1",
+          "GrapeCity.Documents.Word.Layout": "5.1.0.796",
+          "Newtonsoft.Json": "13.0.1",
+          "Syncfusion.DocIORenderer.Net.Core": "16.3.0.21",
+          "Syncfusion.XlsIORenderer.Net.Core": "20.2.0.40",
+          "System.Data.SqlClient": "4.8.3",
+          "GemBox.Spreadsheet": "41.3.30.1038",
+          "Syncfusion.Compression.Base": "20.1451.0.60",
+          "Syncfusion.OfficeChart.Base": "19.3450.0.46",
+          "Syncfusion.OfficeChartToImageConverter.Wpf": "19.3450.0.46",
+          "Syncfusion.SfChart.WPF": "19.3450.0.46",
+          "WEB_DLL": "1.0.0.0"
+        },
+        "runtime": {
+          "WebApplication1.dll": {}
+        }
+      },
+      "ClosedXML/0.96.0": {
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.17.1",
+          "ExcelNumberFormat": "1.1.0",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Drawing.Common": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "assemblyVersion": "0.96.0.0",
+            "fileVersion": "0.96.0.0"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.17.1": {
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "2.17.1.0",
+            "fileVersion": "2.17.1.0"
+          }
+        }
+      },
+      "ExcelNumberFormat/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/ExcelNumberFormat.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "GrapeCity.Documents.Imaging/5.1.0.796": {
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GrapeCity.Documents.Imaging.dll": {
+            "assemblyVersion": "5.1.0.796",
+            "fileVersion": "5.1.0.796"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ja/GrapeCity.Documents.Imaging.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "GrapeCity.Documents.Pdf/5.1.0.796": {
+        "dependencies": {
+          "GrapeCity.Documents.Imaging": "5.1.0.796",
+          "Portable.BouncyCastle": "1.8.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GrapeCity.Documents.Pdf.dll": {
+            "assemblyVersion": "5.1.0.796",
+            "fileVersion": "5.1.0.796"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ja/GrapeCity.Documents.Pdf.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "GrapeCity.Documents.Word/5.1.0.796": {
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.17.1",
+          "GrapeCity.Documents.Imaging": "5.1.0.796",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Text.Json": "5.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GrapeCity.Documents.Word.dll": {
+            "assemblyVersion": "5.1.0.796",
+            "fileVersion": "5.1.0.796"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ja/GrapeCity.Documents.Word.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "GrapeCity.Documents.Word.Layout/5.1.0.796": {
+        "dependencies": {
+          "GrapeCity.Documents.Imaging": "5.1.0.796",
+          "GrapeCity.Documents.Pdf": "5.1.0.796",
+          "GrapeCity.Documents.Word": "5.1.0.796",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GrapeCity.Documents.Word.Layout.dll": {
+            "assemblyVersion": "5.1.0.796",
+            "fileVersion": "5.1.0.796"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ja/GrapeCity.Documents.Word.Layout.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "HarfBuzzSharp/2.8.2-preview.209": {
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "2.8.2-preview.209",
+          "HarfBuzzSharp.NativeAssets.macOS": "2.8.2-preview.209",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HarfBuzzSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.8.2.0"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/2.8.2-preview.209": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/2.8.2-preview.209": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {},
+      "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.8.2": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.2.0",
+            "fileVersion": "1.8.2.223"
+          }
+        }
+      },
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+        "dependencies": {
+          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        }
+      },
+      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/sni.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/sni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x86/native/sni.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "SkiaSharp/2.88.0-preview.209": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.0-preview.209",
+          "SkiaSharp.NativeAssets.macOS": "2.88.0-preview.209",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.0.0"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.0-preview.209": {
+        "dependencies": {
+          "HarfBuzzSharp": "2.8.2-preview.209",
+          "SkiaSharp": "2.88.0-preview.209"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.0-preview.209": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.0-preview.209": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Compression.Net.Core/20.2.0.40": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "20.2600.0.40",
+            "fileVersion": "20.2600.0.40"
+          }
+        }
+      },
+      "Syncfusion.DocIO.Net.Core/16.3.0.21": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Syncfusion.Compression.Net.Core": "20.2.0.40",
+          "Syncfusion.Licensing": "20.2.0.40",
+          "Syncfusion.OfficeChart.Net.Core": "16.3.0.21"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.DocIO.Portable.dll": {
+            "assemblyVersion": "16.3200.0.21",
+            "fileVersion": "16.3200.0.21"
+          }
+        }
+      },
+      "Syncfusion.DocIORenderer.Net.Core/16.3.0.21": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "SkiaSharp": "2.88.0-preview.209",
+          "Syncfusion.Compression.Net.Core": "20.2.0.40",
+          "Syncfusion.DocIO.Net.Core": "16.3.0.21",
+          "Syncfusion.OfficeChart.Net.Core": "16.3.0.21",
+          "Syncfusion.Pdf.Net.Core": "20.2.0.40"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.DocIORenderer.Portable.dll": {
+            "assemblyVersion": "16.3200.0.21",
+            "fileVersion": "16.3200.0.21"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.2.0.40": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.2.0.40",
+            "fileVersion": "20.2.0.40"
+          }
+        }
+      },
+      "Syncfusion.OfficeChart.Net.Core/16.3.0.21": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Syncfusion.Compression.Net.Core": "20.2.0.40"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.dll": {
+            "assemblyVersion": "16.3200.0.21",
+            "fileVersion": "16.3200.0.21"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Net.Core/20.2.0.40": {
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "20.2.0.40",
+          "Syncfusion.Licensing": "20.2.0.40",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Pdf.Portable.dll": {
+            "assemblyVersion": "20.2600.0.40",
+            "fileVersion": "20.2600.0.40"
+          }
+        }
+      },
+      "Syncfusion.SkiaSharpHelper.Net.Core/20.2.0.40": {
+        "dependencies": {
+          "SkiaSharp.HarfBuzz": "2.88.0-preview.209",
+          "Syncfusion.Compression.Net.Core": "20.2.0.40"
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.SkiaSharpHelper.Portable.dll": {
+            "assemblyVersion": "20.2600.0.40",
+            "fileVersion": "20.2600.0.40"
+          }
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/20.2.0.40": {
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "20.2.0.40",
+          "Syncfusion.Licensing": "20.2.0.40"
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {
+            "assemblyVersion": "20.2600.0.40",
+            "fileVersion": "20.2600.0.40"
+          }
+        }
+      },
+      "Syncfusion.XlsIORenderer.Net.Core/20.2.0.40": {
+        "dependencies": {
+          "SkiaSharp": "2.88.0-preview.209",
+          "Syncfusion.Compression.Net.Core": "20.2.0.40",
+          "Syncfusion.Pdf.Net.Core": "20.2.0.40",
+          "Syncfusion.SkiaSharpHelper.Net.Core": "20.2.0.40",
+          "Syncfusion.XlsIO.Net.Core": "20.2.0.40"
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.XlsIORenderer.Portable.dll": {
+            "assemblyVersion": "20.2600.0.40",
+            "fileVersion": "20.2600.0.40"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {},
+      "System.Data.SqlClient/4.8.3": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.6.1.3",
+            "fileVersion": "4.700.21.41603"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.3",
+            "fileVersion": "4.700.21.41603"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.3",
+            "fileVersion": "4.700.21.41603"
+          }
+        }
+      },
+      "System.Drawing.Common/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {},
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {},
+      "System.Text.Encoding.CodePages/4.4.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "System.Text.Json/5.0.2": {},
+      "GemBox.Spreadsheet/41.3.30.1038": {
+        "runtime": {
+          "GemBox.Spreadsheet.dll": {
+            "assemblyVersion": "41.3.30.1038",
+            "fileVersion": "41.3.30.1038"
+          }
+        }
+      },
+      "Syncfusion.Compression.Base/20.1451.0.60": {
+        "runtime": {
+          "Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "20.1451.0.60",
+            "fileVersion": "20.1451.0.60"
+          }
+        }
+      },
+      "Syncfusion.OfficeChart.Base/19.3450.0.46": {
+        "runtime": {
+          "Syncfusion.OfficeChart.Base.dll": {
+            "assemblyVersion": "19.3450.0.46",
+            "fileVersion": "19.3450.0.46"
+          }
+        }
+      },
+      "Syncfusion.OfficeChartToImageConverter.Wpf/19.3450.0.46": {
+        "runtime": {
+          "Syncfusion.OfficeChartToImageConverter.Wpf.dll": {
+            "assemblyVersion": "19.3450.0.46",
+            "fileVersion": "19.3450.0.46"
+          }
+        }
+      },
+      "Syncfusion.SfChart.WPF/19.3450.0.46": {
+        "runtime": {
+          "Syncfusion.SfChart.WPF.dll": {
+            "assemblyVersion": "19.3450.0.46",
+            "fileVersion": "19.3450.0.46"
+          }
+        }
+      },
+      "WEB_DLL/1.0.0.0": {
+        "runtime": {
+          "WEB_DLL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApplication1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClosedXML/0.96.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3VLfl4wCMHDuaV0GwA9MHY6BvKlTH4zaNG/ah6QODCZYMqLS6m0JVZph5kGpbuCCCyKXdO2hiUd/e35Wzd/Zmw==",
+      "path": "closedxml/0.96.0",
+      "hashPath": "closedxml.0.96.0.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml/2.17.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wgt1yrtqeTvlsgaDRcSbd5rsjTQytjNi4CW3a5VsoDcPVW9UbpheI7Ga1EhvwksT9jm7ey8vfkmeY//urMHwKQ==",
+      "path": "documentformat.openxml/2.17.1",
+      "hashPath": "documentformat.openxml.2.17.1.nupkg.sha512"
+    },
+    "ExcelNumberFormat/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R3BVHPs9O+RkExbZYTGT0+9HLbi8ZrNij1Yziyw6znd3J7P3uoIR07uwTLGOogtz1p6+0sna66eBoXu7tBiVQA==",
+      "path": "excelnumberformat/1.1.0",
+      "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
+    },
+    "GrapeCity.Documents.Imaging/5.1.0.796": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UJs1dU2v4KZZrnUhtiPaQ58MCfRm1NKH/GEuDd2I1Oyy5HgQvEIRjLqqlGiK1mLDK14SwSqmMsMddYC0O7r1Aw==",
+      "path": "grapecity.documents.imaging/5.1.0.796",
+      "hashPath": "grapecity.documents.imaging.5.1.0.796.nupkg.sha512"
+    },
+    "GrapeCity.Documents.Pdf/5.1.0.796": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vz2yyfnVloVQKOm471j+IZO082ecr3+S+t/L/ys5ChPtI2t5Njj7IJ2MTVTr/iGIzLj/Z9EiWcSpFIddCuqdWg==",
+      "path": "grapecity.documents.pdf/5.1.0.796",
+      "hashPath": "grapecity.documents.pdf.5.1.0.796.nupkg.sha512"
+    },
+    "GrapeCity.Documents.Word/5.1.0.796": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1aEE1YKYAdrz/gjTdnzXN7M+ksw3NmVMxzhpa6e+AfWIfiKR1bheK8yqXU44hnatC3Zo5OvAIrxoLjl3bRUY1w==",
+      "path": "grapecity.documents.word/5.1.0.796",
+      "hashPath": "grapecity.documents.word.5.1.0.796.nupkg.sha512"
+    },
+    "GrapeCity.Documents.Word.Layout/5.1.0.796": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-69uaI7xDhWLisfBsqmGNJ5LK0C/qM2BioxyATm4B5dizB//3mNyg5KQy65+/54N4CJkwtSFohWwH+rOGUajJOQ==",
+      "path": "grapecity.documents.word.layout/5.1.0.796",
+      "hashPath": "grapecity.documents.word.layout.5.1.0.796.nupkg.sha512"
+    },
+    "HarfBuzzSharp/2.8.2-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sSK2t45blFE2oeOnY1G3IKTe2uu5op1Knc3P3VcQiF/A6Odlko5p8g3pDRAhpSMtCquda68UN26Szft/te10jg==",
+      "path": "harfbuzzsharp/2.8.2-preview.209",
+      "hashPath": "harfbuzzsharp.2.8.2-preview.209.nupkg.sha512"
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/2.8.2-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p25T09D0weN9WRhrbqOQPS2hKdsUf1chpB68QlHR3v6GY6ZKRt455KPPN3xAddhDzW8Puu1uX4qPIvhECJzxrw==",
+      "path": "harfbuzzsharp.nativeassets.macos/2.8.2-preview.209",
+      "hashPath": "harfbuzzsharp.nativeassets.macos.2.8.2-preview.209.nupkg.sha512"
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/2.8.2-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QZsRq0hB4vSJReNpfuVTu7/uPeUm7Q/64xnoFyQNnrffnKdWp9ZHLZDKJflNCA/Z4/GDhKSc2fgZFXWsmRoWJg==",
+      "path": "harfbuzzsharp.nativeassets.win32/2.8.2-preview.209",
+      "hashPath": "harfbuzzsharp.nativeassets.win32.2.8.2-preview.209.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Portable.BouncyCastle/1.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XpJVIhjPiO0o+DU36eeIzqnRilDmE8Z7Kfhm9V9o1yNqM3ikgleD94Z5W/LeEu3t63LaZl2CNJexaix+I6AUMg==",
+      "path": "portable.bouncycastle/1.8.2",
+      "hashPath": "portable.bouncycastle.1.8.2.nupkg.sha512"
+    },
+    "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
+      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
+      "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"
+    },
+    "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
+      "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
+      "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
+      "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SkiaSharp/2.88.0-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jziygjO+AP7EOiZqmkN/rd3gbf1dUYWOW+zjZ2EP096AXojJZGRoyMlVq/NxwJodsdRc81FRUM1O4HrS1fYOZg==",
+      "path": "skiasharp/2.88.0-preview.209",
+      "hashPath": "skiasharp.2.88.0-preview.209.nupkg.sha512"
+    },
+    "SkiaSharp.HarfBuzz/2.88.0-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EB3pEZunwc356dBhq32vQwLUMD5d2m6SxW0n741fGZsRl85z57l3nUlQkzATMgReqRyDa7syt9/HTCAyefFi4g==",
+      "path": "skiasharp.harfbuzz/2.88.0-preview.209",
+      "hashPath": "skiasharp.harfbuzz.2.88.0-preview.209.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.0-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LRvhvyxPAgOayu/C559aIUSVTGQLOtE6Sn5e1Zi4U4SCoCNjkmfmu4xMxL9V/A+JAD28geo0s9F17vwd9Ab9dw==",
+      "path": "skiasharp.nativeassets.macos/2.88.0-preview.209",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.0-preview.209.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.0-preview.209": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BFOrh37vl/BnkdRsKqi0eqpN9VttqAa/RRcpFpmuwPQRpvzTWTsl3bk7V/OMY8W6ccAmt2xeJh8X3Zwqs7pxCA==",
+      "path": "skiasharp.nativeassets.win32/2.88.0-preview.209",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.0-preview.209.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Net.Core/20.2.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7lM9W7UngaOX/6ux8LxHx97Xr9EziQ1I4Duxlx8mbXbWI08TmhSz+/PLOaeMkJtFfjWLIR66NNOlgJf3XgiVGA==",
+      "path": "syncfusion.compression.net.core/20.2.0.40",
+      "hashPath": "syncfusion.compression.net.core.20.2.0.40.nupkg.sha512"
+    },
+    "Syncfusion.DocIO.Net.Core/16.3.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vSFVyxOwgxywHSsdjL4SPejTCPXqkcHTzvYAOD0mhm9VcSWjYYrIKvNAsuG9bXlkGzYiEd5ep+csONC8DdsChg==",
+      "path": "syncfusion.docio.net.core/16.3.0.21",
+      "hashPath": "syncfusion.docio.net.core.16.3.0.21.nupkg.sha512"
+    },
+    "Syncfusion.DocIORenderer.Net.Core/16.3.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tIAaL3Jj0CfIIoRHxgWmG5xoZ2SGEm3EDqsUhSgKJPrx7gEWJJdqBjWml/TY+TpdIzGl02p49nZ1NHdPq7ic9Q==",
+      "path": "syncfusion.dociorenderer.net.core/16.3.0.21",
+      "hashPath": "syncfusion.dociorenderer.net.core.16.3.0.21.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.2.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+JLKLk0xCvAVGsb/O1ocJiiEmYwIxn2cpmGf5pNZoZCW4c1GwTNANnoSQZXkcbNz/9FvtQZ/1Fhh7qbjgZuZeQ==",
+      "path": "syncfusion.licensing/20.2.0.40",
+      "hashPath": "syncfusion.licensing.20.2.0.40.nupkg.sha512"
+    },
+    "Syncfusion.OfficeChart.Net.Core/16.3.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qcquk2MKW37I26HJe/X70WdyxGJlq5SoSO9EOv5sacHodnwtQsFKXot61yD5t2RuKTpu4dBfhW52umr0Mj/jjQ==",
+      "path": "syncfusion.officechart.net.core/16.3.0.21",
+      "hashPath": "syncfusion.officechart.net.core.16.3.0.21.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.Net.Core/20.2.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q/1EchbUS6uHwzs8MDypgok9brLDNmwjx/+uvNCEojxBm17nF2bTiX/eMxR5shH42L36hORJls3xtZp2U+5X7w==",
+      "path": "syncfusion.pdf.net.core/20.2.0.40",
+      "hashPath": "syncfusion.pdf.net.core.20.2.0.40.nupkg.sha512"
+    },
+    "Syncfusion.SkiaSharpHelper.Net.Core/20.2.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1WvHM5mnYXf52SlfvPmlVkKWg9k4qIkD06aT/kXlQog1u40UAGSKS3+ZFVSSv/6r05C7vD0Ixmlh12M7Jeb33Q==",
+      "path": "syncfusion.skiasharphelper.net.core/20.2.0.40",
+      "hashPath": "syncfusion.skiasharphelper.net.core.20.2.0.40.nupkg.sha512"
+    },
+    "Syncfusion.XlsIO.Net.Core/20.2.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HLuUV2VPvpjx634ehYslVjU+j8NGN39u+KihpDoCcsEcG3yRh8CEmx8+bw1Ei7QGA2JsJs/sxhd7pjcXkLIe6w==",
+      "path": "syncfusion.xlsio.net.core/20.2.0.40",
+      "hashPath": "syncfusion.xlsio.net.core.20.2.0.40.nupkg.sha512"
+    },
+    "Syncfusion.XlsIORenderer.Net.Core/20.2.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wtv/SgdsooKIiJKBstJofoOWPjceOXMs4jG0eblrxH+UWSBHIWqDOYCnAK1pkK/VtxLnrAvMk+MZQ5oqR679nA==",
+      "path": "syncfusion.xlsiorenderer.net.core/20.2.0.40",
+      "hashPath": "syncfusion.xlsiorenderer.net.core.20.2.0.40.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yERfVLXAY0QbylAgaGLByYN0hFxX28aeEQ0hUgJO+Ntn1AfmWl5HHUoYJA0Yl9HhIUUJHVaS/Sw/RLZr5aaC+A==",
+      "path": "system.data.sqlclient/4.8.3",
+      "hashPath": "system.data.sqlclient.4.8.3.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "path": "system.drawing.common/4.5.0",
+      "hashPath": "system.drawing.common.4.5.0.nupkg.sha512"
+    },
+    "System.IO.Packaging/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "path": "system.io.packaging/4.7.0",
+      "hashPath": "system.io.packaging.4.7.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+      "path": "system.text.encoding.codepages/4.4.0",
+      "hashPath": "system.text.encoding.codepages.4.4.0.nupkg.sha512"
+    },
+    "System.Text.Json/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
+      "path": "system.text.json/5.0.2",
+      "hashPath": "system.text.json.5.0.2.nupkg.sha512"
+    },
+    "GemBox.Spreadsheet/41.3.30.1038": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Compression.Base/20.1451.0.60": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.OfficeChart.Base/19.3450.0.46": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.OfficeChartToImageConverter.Wpf/19.3450.0.46": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.SfChart.WPF/19.3450.0.46": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WEB_DLL/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

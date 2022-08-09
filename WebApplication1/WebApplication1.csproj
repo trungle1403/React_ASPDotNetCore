@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Class\NTSSecurity.cs" />
+		<Compile Remove="Controllers\Word2PDFController.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="AppData\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="wwwroot\Files\Excel\**" />
+		<Content Remove="wwwroot\Files\Excel\**" />
+		<EmbeddedResource Remove="wwwroot\Files\Excel\**" />
+		<None Remove="wwwroot\Files\Excel\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.96.0" />
+		<PackageReference Include="DocumentFormat.OpenXml" Version="2.17.1" />
+		<PackageReference Include="GrapeCity.Documents.Word.Layout" Version="5.1.0.796" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="16.3.0.21" />
+		<PackageReference Include="Syncfusion.XlsIORenderer.Net.Core" Version="20.2.0.40" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="GemBox.Spreadsheet">
+			<HintPath>bin\GemBox.Spreadsheet.dll</HintPath>
+		</Reference>
+		<Reference Include="Syncfusion.Compression.Base">
+			<HintPath>bin\Syncfusion.Compression.Base.dll</HintPath>
+		</Reference>
+		<Reference Include="Syncfusion.Licensing">
+			<HintPath>bin\Syncfusion.Licensing.dll</HintPath>
+		</Reference>
+		<Reference Include="Syncfusion.OfficeChart.Base">
+			<HintPath>bin\Syncfusion.OfficeChart.Base.dll</HintPath>
+		</Reference>
+		<Reference Include="Syncfusion.OfficeChartToImageConverter.Wpf">
+			<HintPath>bin\Syncfusion.OfficeChartToImageConverter.Wpf.dll</HintPath>
+		</Reference>
+		<Reference Include="Syncfusion.SfChart.WPF">
+			<HintPath>bin\Syncfusion.SfChart.WPF.dll</HintPath>
+		</Reference>
+		<Reference Include="WEB_DLL">
+			<HintPath>bin\WEB_DLL.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="wwwroot\Files\" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,233 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style type="text/css">
+    @@media (min-width: 992px) {
+        #mdThemMoi .modal-dialog {
+            width: 40%;
+        }
+    }
+
+    .fade-scale {
+        transform: scale(0);
+        opacity: 0;
+        -webkit-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+        .fade-scale.in {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+    .offcanvas.show {
+        transform: none;
+    }
+
+    .offcanvas-top {
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 30vh;
+        max-height: 100%;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        transform: translateY(-100%);
+    }
+
+    .offcanvas {
+        position: fixed;
+        bottom: 0;
+        z-index: 1050;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        visibility: hidden;
+        background-color: #fff;
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+        visibility: visible;
+    }
+
+
+    .offcanvas-end {
+        top: 0;
+        border-left: 0 solid transparent;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    .popover {
+        max-width: 500px;
+        min-width: 200px !important;
+        border-radius: 3px 3px 3px 3px !important;
+        background-color: white;
+        font-size: 11px;
+        opacity: 0.9 !important;
+    }
+
+    .popover-title {
+        max-width: 500px;
+        min-width: 200px !important;
+        width: auto;
+        margin-top: -1px !important;
+        font-size: 11px;
+        height: 20px;
+        line-height: 5px;
+        background-color: #5cb85c !important;
+        color: white;
+        border-top-left-radius: calc(.3rem - 1px) !important;
+        border-top-right-radius: calc(.3rem - 1px) !important;
+        border-bottom: 1px solid #d9dbe1;
+        opacity: 0.9 !important;
+    }
+
+    .mt-10px {
+        margin-top: 10px;
+    }
+
+    .box {
+        border: 1px solid #d5d5d5;
+        display: block;
+        position: relative;
+        margin: 15px 10px 10px 10px;
+    }
+
+    .box-title {
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top: -15px;
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: white;
+        font-weight: bold;
+    }
+
+    .box-body {
+        padding: 10px 10px 0 10px;
+    }
+</style>
+<div class="main-content">
+    <div class="main-content-inner">
+        <div class="page-content">
+            <div class="row">
+                <div class="col-md-9">
+                    <button class="btn btn-sm btn-primary" id="btnThemMoi"><i class="fa fa-plus"></i>&ensp;Thêm mới</button>
+                    <button class="btn btn-sm btn-success" id="btnXuatExcel"><i class="fa fa-download"></i>&ensp;Xuất Excel</button>
+                </div>
+                <div class="col-md-3">
+                     <a href="#" id="btncauhinh" style="float: right;margin-left: 4px;" class="btn btn-default">
+											<i class="ace-icon fa fa-cog"></i>									
+										</a>
+                    <span class="input-icon" style="float: right;">
+                        <input type="text" placeholder="Nội dung tìm kiếm ..." class="nav-search-input" id="timKiem" autocomplete="off">
+                        <i class="ace-icon fa fa-search nav-search-icon"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="space-4"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="example-table" class="GridData"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="mdThemMoi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <span id="tieuDeModal">Thêm mới tôn giáo</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <fieldset class="khungvien">
+                    <legend>Thông tin tôn giáo</legend>
+                    <div class="row form-group">
+                        <div class="col-md-3">
+                            <label class="validation">Mã</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control input-sm" type="text" id="txtMa" maxlength="50" />
+                        </div>
+
+                    </div>
+                    <div class="row form-group mt-4px" style="margin-top:4px">
+
+                        <div class="col-md-3">
+                            <label class="validation">Tên tôn giáo</label>
+                        </div>
+
+                        <div class="col-md-9">
+                            <input class="form-control input-sm" type="text" id="txtTen" maxlength="200" />
+                        </div>
+                    </div>
+                    <div class="row form-group mt-4px" style="margin-top:4px">
+                        <div class="col-md-3">
+                            <label>Ghi chú</label>
+                        </div>
+                        <div class="col-md-9">
+                            <textarea class="form-control" id="txtDienGiai" rows="3"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="modal-footer">
+                <label class="middle" style="line-height:0;float:left">
+                    <input class="ace" type="checkbox" id="CheckNgungSD" />
+                    <span class="lbl"> &nbsp;Ngưng sử dụng</span>
+                </label>
+                <a href="#" id="btnLuuVaDong" class="btn btn-success" onclick="return false;">
+                    <i class="ace-icon fa fa-floppy-o bigger-110"></i>&nbsp;Lưu và đóng
+                </a> &nbsp;
+                <a href="#" class="btn btn-danger"
+                   data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Đóng</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="mdcauhinh">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    <span id="tieuDeModal">Cấu hình bảng thông tin</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                     <div class="col-md-12">
+                   <div id="example-tableCauHinh" class="GridData"></div>
+               </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" id="btnLuuCauHinh" class="btn btn-success" onclick="return false;">
+                    <i class="ace-icon fa fa-floppy-o bigger-110"></i>&nbsp;Lưu cấu hình
+                </a> &nbsp;
+                <a href="#" class="btn btn-danger"
+                   data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Đóng</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="TonGiaoID" />
+<script src="~/js/TonGiao.js?v=@DateTime.Now.ToString("ddMMyyyyhhmmss")"></script>
+
+
